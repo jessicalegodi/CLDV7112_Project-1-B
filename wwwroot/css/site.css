@@ -4,8 +4,26 @@ html {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f6f8;
+    background-color: #f5f7fa;
+    color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-weight: 700;
+}
+
+.page-header p {
+    color: #6c757d;
 }
 
 .card {
@@ -13,10 +31,21 @@ body {
     border-radius: 12px;
 }
 
-.navbar-brand {
-    font-weight: bold;
+.storage-item {
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: white;
 }
 
-.container {
-    max-width: 1200px;
+.table {
+    vertical-align: middle;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+footer {
+    background: white;
 }
