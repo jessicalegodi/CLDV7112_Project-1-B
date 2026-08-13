@@ -38,11 +38,24 @@ Technologies
 - Azure Storage
 - Bootstrap
 - GitHub
+Storage Containers
 
- Student Number
+ Tables
+- Customers
+- Products
+
+ Blob Container
+- product-images
+
+ Queue
+- order-processing
+
+File Share
+- logs
+ Student Information
 
 ST10367784
 
- Module Code
+Module Code: CLDV7112
 
-CLDV7112
+
