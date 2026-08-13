@@ -126,7 +126,22 @@ namespace CLDV7112_Project1.Services
 
             await _queueClient.SendMessageAsync(message);
         }
+public async Task<List<string>> GetQueueMessagesAsync()
+{
+    await _queueClient.CreateIfNotExistsAsync();
 
+    var messages = new List<string>();
+
+    var response =
+        await _queueClient.PeekMessagesAsync(32);
+
+    foreach (var message in response.Value)
+    {
+        messages.Add(message.MessageText);
+    }
+
+    return messages;
+}
         // AZURE FILE STORAGE
 
         public async Task UploadFileAsync(
