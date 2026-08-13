@@ -8,5 +8,10 @@ namespace CLDV7112_Project1.Controllers
         {
             return View();
         }
+
+        public IActionResult Error()
+        {
+            return View();
+        }
     }
 }
